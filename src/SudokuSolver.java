@@ -20,6 +20,22 @@ public class SudokuSolver {
         }
         return false;
     }
+
+    // Check if number already exists in the 3X3 box
+    private static boolean isNumberInBox(int[][] board, int number, int row, int column) {
+        int localBoxRow = row - (row % 3);  // Top left corner of local box
+        int localBoxColumn = column - (column % 3); // Top left corner of local box
+
+        for (int i = localBoxRow; i<localBoxRow + 3; i++) {  // iterate through the 3 rows in the 3X3 box
+            for (int j = localBoxColumn; j<localBoxColumn + 3; j++) { // for each row, iterate through the 3 columns in the 3X3 box
+                if (board[i][j] == number) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         int[][] board = {
             {7,0,2,0,5,0,6,0,0},
