@@ -13,21 +13,21 @@ This helps me learn from my logical oversights and realize more effective implem
 
 ## Screenshots
 The initial board is passed in via a 2D array:
-<figure>
+<figure style="text-align:center">
   <img alt="Initial board" src="./images/initial-board.png" />
 </figure>
 
 The solved board is printed out to the console:
-<figure>
+<figure style="text-align:center">
   <img alt="Solved board" src="./images/solved-board-printout.png" />
 </figure>
 
 If the initial board passed in is unsolvable (e.g. the first number is changed to a 1, which is also seen in the same column)...:
-<figure>
+<figure style="text-align:center">
   <img alt="Initial unsolvable board" src="./images/initial-board-unsolvable.png" />
 </figure>
 
 ... then the unsolvable board is printed out to the console:
-<figure>
+<figure style="text-align:center">
   <img alt="Unsolvable board" src="./images/unsolvable-board-printout.png" />
 </figure>
