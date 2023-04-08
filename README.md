@@ -13,30 +13,21 @@ This helps me learn from my logical oversights and realize more effective implem
 
 ## Screenshots
 The initial board is passed in via a 2D array:
-<div class="image">
+<figure>
   <img alt="Initial board" src="./images/initial-board.png" />
-</div>
+</figure>
 
 The solved board is printed out to the console:
-<div class="image">
+<figure>
   <img alt="Solved board" src="./images/solved-board-printout.png" />
-</div>
+</figure>
 
 If the initial board passed in is unsolvable (e.g. the first number is changed to a 1, which is also seen in the same column)...:
-<div class="image">
+<figure>
   <img alt="Initial unsolvable board" src="./images/initial-board-unsolvable.png" />
-</div>
+</figure>
 
 ... then the unsolvable board is printed out to the console:
-<div class="image">
+<figure>
   <img alt="Unsolvable board" src="./images/unsolvable-board-printout.png" />
-</div>
-
-
-<style>
-.image {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-</style>
+</figure>
