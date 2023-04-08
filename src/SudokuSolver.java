@@ -80,5 +80,25 @@ public class SudokuSolver {
             {0,0,0,2,0,0,0,0,0},
             {0,0,7,0,4,0,2,0,3}
         };
+
+        if (solveBoard(board)) {
+            System.out.println("Solved successfully!");
+        } else {
+            System.out.println("Unsolvable board!");
+        }
+
+        // Print out the whole board
+        for (int row = 0; row < GRID_SIZE; row++) {
+            if (row % 3 == 0 && row != 0) { // Print the hyphens at every third row, but not at the very first row
+                System.out.println("-----------");
+            }
+            for (int column = 0; column < GRID_SIZE; column++) {
+                if (column % 3 == 0 && column != 0) { // Print the pipes at every third column, but not at the very first column
+                    System.out.print("|");
+                }
+                System.out.print(board[row][column]);  // notice it's not "println"
+            }
+            System.out.println();  // After 9 numbers (GRID_SIZE), print a new line
+        }
     }
 }
